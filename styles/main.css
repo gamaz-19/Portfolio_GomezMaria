@@ -1,0 +1,186 @@
+html {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: var(--hex-dark);
+    overflow-x: hidden;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    width: 100vw;
+    height: 3vw;
+    background-color: rgba(var(--rgb-primary-emphasis)/ .5);
+    border-bottom: .1vw solid var(--hex-primary-emphasis);
+    backdrop-filter: blur(.3vw);
+}
+
+.navbar .navbar__logo--link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .navbar__logo--link .navbar__logo {
+    margin-left: 2.5vw;
+    height: 2vw;
+    opacity: .7;
+    transition: .3s ease;
+}
+
+.navbar .navbar__logo--link .navbar__logo:hover {
+    transform: scale(1.1);
+}
+
+.navbar .navbar__logo--link .navbar__logo:active {
+    transform: scale(1.05);
+}
+
+.navbar .navbar__menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 75%;
+    height: 100%;
+}
+
+.navbar .navbar__menu a {
+    color: var(--hex-dark);
+    font-size: .7vw;
+    text-decoration: none;
+    transition: .5s ease;
+}
+
+.navbar .navbar__menu a:hover {
+    transform: scale(1.3);
+}
+
+.navbar .navbar__menu a:active {
+    transform: scale(1.1);
+}
+
+section {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-margin-top: 1.5vw;
+}
+
+.banner {
+    position: relative;
+    margin-top: 3vw;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.banner .bannerImg {
+    position: absolute;
+    width: 100vw;
+    height: 70vh;
+    background-image: url("../media/bga-nightcover.jpg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner .bannerFilter {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 100vw;
+    height: 70vh;
+    background-image: linear-gradient(to right, rgba(var(--rgb-dark)/ .95) 30%, rgba(var(--rgb-dark)/ 0));
+
+}
+
+.banner .bannerFilter .bannerFilter--title {
+    margin: 0 0 1vw 2.5vw;
+    color: white;
+    font-size: 3.5vw;
+    letter-spacing: .1vw;
+    font-style: oblique;
+}
+
+.banner .bannerFilter .bannerFilter--title span {
+    font-size: 4vw;
+}
+
+.banner .bannerFilter .bannerFilter--slogan {
+    margin: 0 0 2.5vw 2.5vw;
+    color: white;
+    font-family: monospace;
+    font-size: 1.5vw;
+}
+
+.banner .bannerFilter .bannerFilter--btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 2.5vw;
+    width: 10vw;
+    height: 3vw;
+    color: var(--hex-dark);
+    background-color: var(--hex-primary-emphasis);
+    border-radius: 3vw;
+    font-size: 1vw;
+    text-decoration: none;
+    transition: .5s ease;
+}
+
+.banner .bannerFilter .bannerFilter--btn:hover,
+.projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__btns .projects__card--infocontainer__repobtn:hover,
+.projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__btns .projects__card--infocontainer__overviewbtn:hover,
+.projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__btns .projects__card--infocontainer__websitebtn:hover,
+.contacts .contacts__socialmedia .contacts__socialmedia--btn img:hover {
+    transform: scale(1.1);
+}
+
+.banner .bannerFilter .bannerFilter--btn:active,
+.projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__btns .projects__card--infocontainer__repobtn:active,
+.projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__btns .projects__card--infocontainer__overviewbtn:active,
+.projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__btns .projects__card--infocontainer__websitebtn:active,
+.contacts .contacts__socialmedia .contacts__socialmedia--btn img:active {
+    transform: scale(1.05);
+}
+
+
+.banner .bannerFilter .bannerImg{
+    width: 20vw;
+}
+
+.banner .bannerImg2 {
+    position: absolute;
+    width: 100vw;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    left: 70vw;
+    top: -8vw;
+}
+
+.banner .bannerFilter .bannerImg2{
+    width: 20vw;
+}
+
+.aboutme {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 0vh;
+    height: 70vh;
+}
