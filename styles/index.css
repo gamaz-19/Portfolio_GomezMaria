@@ -1,8 +1,8 @@
 body {
-    background-image: url(../media/Fondo-Tecnológico-HD.gif);
-    background-color: black;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(135deg, #0a0a2e 0%, #1a1a3e 50%, #0a0a2e 100%);
+    color: #e0e0ff;
+    line-height: 1.6;
+    overflow-x: hidden;
 }
 
 /** Rectangulo Principal **/
